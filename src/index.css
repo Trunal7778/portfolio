@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-poppins: 'Poppins', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Offset for sticky header */
+  }
+
+  body {
+    @apply font-inter bg-slate-50 text-slate-900 dark:bg-[#0F172A] dark:text-white transition-colors duration-300 overflow-x-hidden;
+  }
+
+  /* Custom selections */
+  ::selection {
+    @apply bg-blue-500/20 text-blue-700 dark:bg-sky-500/30 dark:text-sky-200;
+  }
+
+  /* Webkit custom scrollbars */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-slate-100 dark:bg-[#090D16];
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-slate-300 dark:bg-slate-800 rounded-full border-2 border-slate-100 dark:border-[#090D16] hover:bg-blue-500 dark:hover:bg-sky-500 transition-colors;
+  }
+}
+
+@layer utilities {
+  /* Dynamic Background Particles / Shapes */
+  .pulse-glow-1 {
+    animation: pulse-glow 15s ease-in-out infinite;
+  }
+  .pulse-glow-2 {
+    animation: pulse-glow 18s ease-in-out infinite alternate;
+  }
+
+  /* Floating Animation Utilities */
+  .animate-float-slow {
+    animation: float 8s ease-in-out infinite;
+  }
+  .animate-float-medium {
+    animation: float 6s ease-in-out infinite;
+  }
+  .animate-float-fast {
+    animation: float 4s ease-in-out infinite;
+  }
+}
+
+/* Animations declarations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(5deg);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.1;
+    transform: scale(1) translate(0px, 0px);
+  }
+  50% {
+    opacity: 0.25;
+    transform: scale(1.15) translate(20px, -20px);
+  }
+}
+
+/* Custom Hide Scrollbar for specific sections if needed */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
