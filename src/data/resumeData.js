@@ -124,6 +124,7 @@ export const resumeData = {
       location: "Ahmedabad, Gujarat",
       timeline: "2023 - Present",
       grade: "Overall CGPA: 7.0 (Up to Semester 6)",
+      logo: "/JG.png",
       details: [
         "Currently Pursuing Semester 7",
         "Key Coursework: Backend Development, Database Engineering (MySQL/PostgreSQL), OOP (Python, Java), Manual & Automation Testing, Software Engineering Concepts (Waterfall methodology)."
@@ -135,6 +136,7 @@ export const resumeData = {
       location: "Ahmedabad, Gujarat (Gujarat Board)",
       timeline: "March 2023",
       grade: "Grade: B2 | Percentile Rank: 78.64",
+      logo: "/Madhav_school.jpeg",
       details: [
         "Completed Higher Secondary Certificate (HSC) in the Commerce stream with a total score of 503/750.",
         "Demonstrated strong academic performance in core subjects including Statistics (67/100), Economics (61/100), Organization of Commerce (65/100), and English (85/100)."
@@ -146,6 +148,7 @@ export const resumeData = {
       location: "Ahmedabad, Gujarat (Gujarat Board)",
       timeline: "May 2021",
       grade: "Grade: A2 | Percentile Rank: 96.83 (88.17%)",
+      logo: "/sahajanand_vidhyalay.avif",
       details: [
         "Completed Secondary School Certificate (SSC) with a total score of 529/600.",
         "Achieved outstanding academic results with 96.83 percentile rank across core subjects including Mathematics (84/100), Science (78/100), Social Science (87/100), and English (93/100)."
