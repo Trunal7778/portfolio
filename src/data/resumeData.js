@@ -131,8 +131,8 @@ export const resumeData = {
     },
     {
       degree: "HSC (Class XII) - Commerce Stream",
-      institution: "Bhavna Higher Secondary Vidhyalay",
-      location: "Ahmedabad, Gujarat (GSEB)",
+      institution: "Gurushree Dharmdasji Maharaj Madhav Vidyalay",
+      location: "Ahmedabad, Gujarat (Gujarat Board)",
       timeline: "March 2023",
       grade: "Grade: B2 | Percentile Rank: 78.64",
       details: [
@@ -142,8 +142,8 @@ export const resumeData = {
     },
     {
       degree: "SSC (Class X)",
-      institution: "Bhavna Higher Secondary Vidhyalay",
-      location: "Ahmedabad, Gujarat (GSEB)",
+      institution: "Sahajanand Vidyalaya",
+      location: "Ahmedabad, Gujarat (Gujarat Board)",
       timeline: "May 2021",
       grade: "Grade: A2 | Percentile Rank: 96.83 (88.17%)",
       details: [
