@@ -82,7 +82,7 @@ export const resumeData = {
       ],
       technologies: ["Python", "Flask", "PostgreSQL", "Redis", "Celery", "SQLAlchemy", "Bootstrap", "JavaScript"],
       github: "https://github.com/Trunal7778",
-      demo: "#",
+      demo: "https://next-step-campus-placement-system.vercel.app/",
       image: "placement"
     },
     {
@@ -98,7 +98,7 @@ export const resumeData = {
       ],
       technologies: ["Python", "Flask", "SQLite3", "HTML5", "CSS3", "JavaScript"],
       github: "https://github.com/Trunal7778",
-      demo: "#",
+      demo: "https://e-commerce-honey-selling-website.vercel.app/",
       image: "honey"
     },
     {

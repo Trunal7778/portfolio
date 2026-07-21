@@ -235,14 +235,30 @@ export default function Projects() {
                     <div className="w-full h-[1px] bg-slate-200 dark:bg-slate-800/80 my-4"></div>
 
                     {/* Buttons */}
-                    <div className="flex items-center gap-3">
+                    <div className="flex items-center gap-2.5">
                       <button
                         onClick={() => setSelectedProject(project)}
-                        className="flex-1 px-4 py-2 rounded-xl text-xs font-semibold bg-blue-600 hover:bg-blue-700 dark:bg-sky-500 dark:hover:bg-sky-400 text-white dark:text-slate-950 flex items-center justify-center gap-1.5 transition-colors cursor-pointer"
+                        className={`flex-1 px-3 py-2 rounded-xl text-xs font-semibold flex items-center justify-center gap-1.5 transition-colors cursor-pointer ${
+                          project.demo && project.demo !== "#"
+                            ? 'bg-slate-200 hover:bg-slate-300 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200'
+                            : 'bg-blue-600 hover:bg-blue-700 dark:bg-sky-500 dark:hover:bg-sky-400 text-white dark:text-slate-950'
+                        }`}
                       >
                         <Layers className="w-3.5 h-3.5" />
                         Details
                       </button>
+
+                      {project.demo && project.demo !== "#" && (
+                        <a
+                          href={project.demo}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex-1 px-3 py-2 rounded-xl text-xs font-semibold bg-blue-600 hover:bg-blue-700 dark:bg-sky-500 dark:hover:bg-sky-400 text-white dark:text-slate-950 flex items-center justify-center gap-1.5 transition-colors cursor-pointer"
+                        >
+                          <ExternalLink className="w-3.5 h-3.5" />
+                          View Live
+                        </a>
+                      )}
                       
                       <a
                         href={project.github}
